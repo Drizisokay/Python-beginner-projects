@@ -14,7 +14,6 @@ while True:
     else:
         print('Correct!')
         correct += 1 
-        continue
     answer2 = input('Where is the nations capital in the united states: ')
     if answer2  != 'Washington D.C':
         print('Incorrect!')
@@ -22,7 +21,6 @@ while True:
     else:
         print('Correct!')
         correct += 1 
-        continue
     answer3 = input('Who won the revolutionary war: ')
     if answer3 != 'The 13 original colonies':
         print('Incorrect!')
@@ -30,12 +28,13 @@ while True:
     else:
         print('Correct!')
         correct += 1 
-        continue
     answer4 = input('Who is the best chess player in the world as of 2020: ')
     if answer4 != 'Magnus Carlson':
         print('Incorrect!')
         Incorrect += 1
-    elif answer4 == "Magnus Carlsen":
+    else:
+        answer4 == "Magnus Carlsen"
         print('Correct!')
         correct += 1 
-        break
+    break
+print('You got ' + str(correct) + ' correct and ' + str(Incorrect) + ' incorrect.')
