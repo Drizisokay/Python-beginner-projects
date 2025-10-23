@@ -6,7 +6,7 @@ Developer: Drizisokay
 import random
 import string
 import hashlib
-import requests
+
 
 def generate_password(length = 12):
     chars = string.ascii_letters + string.digits + string.punctuation
